@@ -1,4 +1,6 @@
 import "./styles.css";
+import getHomePage from "./onload";
+
+window.onload = getHomePage;
 
 
-console.log("hello everyone");
