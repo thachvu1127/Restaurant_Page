@@ -13,6 +13,7 @@ html {
     height: 100vh;
     margin: 0;
     padding: 0 50px;
+    flex-direction: row;
   }
   
   nav {
@@ -35,6 +36,7 @@ html {
 
   #content {
     text-align: center;
+    margin-left: 150px;
   }
 
   .order-btn {
@@ -55,3 +57,37 @@ html {
   button:hover {
     cursor: pointer;
   }
+
+  .menu-header {
+    text-align: center;
+}
+
+.menu-container {
+    background: linear-gradient(to bottom right, rgb(98, 206, 241), rgb(252, 248, 248)) no-repeat center center fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50vw;
+    height: 90vh;
+    margin: auto auto;
+    margin-top: 30px;
+    border: 2px solid red;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+.thumbnail-img {
+    border-radius: 50px;
+}
+
+#content {
+  margin: auto auto;
+}
+
+.hidden {
+  display: none;
+}

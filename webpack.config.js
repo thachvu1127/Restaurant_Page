@@ -28,6 +28,13 @@ module.exports = {
                 test: /\.html$/i,
                 loader: "html-loader",
             },
+            {
+                test: /\.(png|jpe?g|webp|gif)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "img/[name][ext]",
+                }
+            }
         ],
     },
 };
