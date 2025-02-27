@@ -1,10 +1,11 @@
-import spicyPeas from "../img/spicyPeas"
+import spicyPeas from "../img/spicy_peas.webp";
 const menu_items = [
     {
         name: "Spicy Garlic Edamame",
         desc: "Fresh Edamame covered with special house seasoning",
         price: "$7.00",
         img: spicyPeas
+        
     },
     {
         name: "Baked Mussels",
@@ -85,27 +86,27 @@ function createMenu() {
         menu_item_container.append(menu_thumbail, menu_desc, menu_price);
         menu_container.append(menu_item_container);
     })
-
+    
     return menu_container;
 }
 
 
 function loadMenu() {
     const contentDiv = document.getElementById("content");
-   contentDiv.classList.add('hidden');
+    contentDiv.classList.add('hidden');
    
-   document.querySelectorAll('.nav-btn').forEach(btn => {
-      btn.classList.remove('active');
-   })
-   document.getElementById('menu-btn').classList.add('active');
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+    })
+    document.getElementById('menu-btn').classList.add('active');
 
-   setTimeout(() => {
-      contentDiv.innerHTML = "";
-      const menuElements = createMenu();
-      contentDiv.appendChild(menuElements);
+    setTimeout(() => {
+        contentDiv.innerHTML = "";
+        const menuElements = createMenu();
+        contentDiv.appendChild(menuElements);
 
-      contentDiv.classList.remove('hidden');
-   }, 200);
+        contentDiv.classList.remove('hidden');
+    }, 200);
 }
 
 

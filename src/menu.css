@@ -19,6 +19,7 @@
     justify-content: space-evenly;
     gap: 20px;
     align-items: center;
+    padding: 20px;
 }
 .thumbnail-img {
     border-radius: 50px;
