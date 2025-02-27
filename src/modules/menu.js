@@ -2,6 +2,8 @@ import spicyPeas from "../img/spicy_peas.webp";
 import bakedLobster from "../img/baked_lobster.webp";
 import bakedMussle from "../img/baked_mussle.jpg";
 import bakedSalmon from "../img/baked_salmon.webp";
+import sashimi from "../img/sashimi.webp";
+import searedTuna from "../img/seared_tuna.png";
 const menu_items = [
     {
         name: "Spicy Garlic Edamame",
@@ -26,19 +28,19 @@ const menu_items = [
         name: "Ocean 18+",
         desc: "18 pieces of assorted sashimi + ebi and tamago",
         price: "$20.00",
-        img: spicyPeas
+        img: sashimi
     },
     {
-        name: "Ocean 18+",
-        desc: "18 pieces of assorted sashimi + ebi and tamago",
-        price: "$20.00",
-        img: spicyPeas
+        name: "Seared Tuna",
+        desc: " Seared Tuna Sashimi with special garlic ponzu sauce topped with fried onion",
+        price: "$15.00",
+        img: searedTuna
     },
     {
-        name: "Ocean 18+",
-        desc: "18 pieces of assorted sashimi + ebi and tamago",
-        price: "$20.00",
-        img: spicyPeas
+        name: "Salmon Tartare",
+        desc: " Salmon Sashimi with special sesame sauce top with black tobiko",
+        price: "$22.00",
+        img: bakedSalmon
     },
 
 ]
@@ -67,6 +69,7 @@ function createMenuDesc(name, desc) {
     h5.textContent = name;
     const p = document.createElement("p");
     p.textContent = desc;
+    p.classList.add("menu-desc");
     desc_container.append(h5, p);
     return desc_container;
 }

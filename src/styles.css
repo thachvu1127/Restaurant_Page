@@ -9,9 +9,10 @@ html {
 nav {
   display: flex;
   justify-content: center;
-  align-items: end;
   gap: 10px;
   padding: 20px;
+  position: relative;
+  top: 70px;
 }
 
 nav button {
@@ -21,7 +22,6 @@ nav button {
   font-size: 2rem;
   text-transform: uppercase;
   z-index: 1;
-  padding: 20px;
 }
 
 nav button:hover {
@@ -57,8 +57,8 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80vw;
-  max-height: 70vh;
-  padding: 20px;
+  max-height: 60vh;
+  padding: 10px;
   overflow-y: auto;
   margin: 100px auto 30px;
   position: relative;
@@ -72,11 +72,15 @@ button:hover {
   justify-content: space-evenly;
   gap: 20px;
   align-items: center;
+  padding: 20px;
 }
 .thumbnail-img {
   border-radius: 50px;
 }
 
+.menu-desc {
+  max-width: 200px;
+}
 
 .hidden {
 display: none;
@@ -86,7 +90,7 @@ display: none;
 position: absolute;
 bottom: 40px;
 right: 0;
-height: calc(100vh - 35px);
+height: calc(100vh - 40px);
 width: 100vw;
 display: flex;
 transition: opacity 0.2s ease;
