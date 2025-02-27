@@ -1,4 +1,7 @@
 import spicyPeas from "../img/spicy_peas.webp";
+import bakedLobster from "../img/baked_lobster.webp";
+import bakedMussle from "../img/baked_mussle.jpg";
+import bakedSalmon from "../img/baked_salmon.webp";
 const menu_items = [
     {
         name: "Spicy Garlic Edamame",
@@ -11,13 +14,13 @@ const menu_items = [
         name: "Baked Mussels",
         desc: "Sweet and Flavorful Baked Mussels",
         price: "$12.00",
-        img: spicyPeas
+        img: bakedMussle
     },
     {
         name: "Lobster Roll",
-        desc: "In: California roll // Topp: baked crawfish with masago & green onion",
+        desc: "18 pieces of assorted sashimi + ebi and tamago",
         price: "$16.00",
-        img: spicyPeas
+        img: bakedLobster
     },
     {
         name: "Ocean 18+",
@@ -93,15 +96,14 @@ function createMenu() {
 
 function loadMenu() {
     const contentDiv = document.getElementById("content");
-    contentDiv.classList.add('hidden');
    
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
     })
-    document.getElementById('menu-btn').classList.add('active');
-
+ 
+   
     setTimeout(() => {
-        contentDiv.innerHTML = "";
+        contentDiv.innerHTML = " ";
         const menuElements = createMenu();
         contentDiv.appendChild(menuElements);
 

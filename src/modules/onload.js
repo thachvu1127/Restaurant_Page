@@ -4,6 +4,7 @@ function getHomePage() {
     h1.textContent = "Ocean Grown";
     h1.style.color = "white";
     h1.style.textAlign = "center";
+    h1.classList.add("heading-title");
     const orderBtn = document.createElement("button");
     orderBtn.textContent = "Take Out";
     orderBtn.classList.add("order-btn");
@@ -20,8 +21,6 @@ function loadHome() {
    document.querySelectorAll('.nav-btn').forEach(btn => {
       btn.classList.remove('active');
    })
-   document.getElementById('home-btn').classList.add('active');
-   
 
    setTimeout(() => {
       contentDiv.innerHTML = "";
